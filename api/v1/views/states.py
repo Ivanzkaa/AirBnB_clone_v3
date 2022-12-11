@@ -1,11 +1,11 @@
 #!/usr/bin/python3
-"""module for the state file"""
-
-
-from api.v1.views import app_views
-from flask import jsonify, abort, request
-from models.state import State
+"""
+    module for the state file
+"""
 from models import storage
+from models.state import State
+from flask import jsonify, abort, request
+from api.v1.views import app_views
 
 
 @app_views.route("/states", methods=['Get'], strict_slashes=False)
