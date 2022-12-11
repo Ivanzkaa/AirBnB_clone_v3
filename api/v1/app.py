@@ -11,6 +11,7 @@ app = Flask(__name__)
 CORS(app, resources={r"/*": {"origins": "0.0.0.0"}})
 app.register_blueprint(app_views)
 
+
 @app.teardown_appcontext
 def closing_sesh():
     """closing the session of the
