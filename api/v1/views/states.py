@@ -1,7 +1,5 @@
 #!/usr/bin/python3
-"""creating a new view for state objects
-that handles all default RESTFul API
-actions"""
+"""module for the state file"""
 
 
 from api.v1.views import app_views
