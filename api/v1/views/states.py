@@ -1,7 +1,7 @@
 #!/usr/bin/python3
-"""
-    module for the state file
-"""
+"""module for the state file"""
+
+
 from models import storage
 from models.state import State
 from flask import jsonify, abort, request
