@@ -64,6 +64,6 @@ def update_amenity(amenity_id):
         if key in keys_ignored:
             pass
         else:
-            setattr(city, key, value)
+            setattr(amenity, key, value)
     amenity.save()
     return jsonify(amenity.to_dict()), 200
